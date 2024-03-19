@@ -22,7 +22,7 @@ jobs:
     - name: SonarQube Scan
       env:
         SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        SONAR_HOST_URL: 'https://your-sonarqube-url.com'  # 替换为您的 SonarQube 地址
-        SONAR_PROJECT_KEY: 'your_project_key'  # 替换为您的项目密钥
+        SONAR_HOST_URL: 'https://loaclhost:9000'  # 替换为您的 SonarQube 地址
+        SONAR_PROJECT_KEY: 'c406d62bc18a2d69961d7ad499a8cec111e3a6e2'  # 替换为您的项目密钥
       run: |
         ./gradlew sonarqube  # 如果是 Java 项目，使用 Gradle 进行代码分析
